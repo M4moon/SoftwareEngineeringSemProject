@@ -10,7 +10,7 @@ recipes = [
 ]
 
 # Route for the homepage
-@app.route('/')
+@app.route('/home')
 def index_page():
     return render_template('index.html')
 

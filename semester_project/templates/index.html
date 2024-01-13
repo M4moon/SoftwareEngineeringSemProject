@@ -1,27 +1,57 @@
-<!-- templates/index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Recipe Website</title>
+    <title>Home Page</title>
     <link
       href="{{ url_for('static', filename='styles.css') }}"
       rel="stylesheet"
     />
   </head>
   <body>
-    {% include 'navbar.html' %}
+    <main>
+      <header>
+        <div class="content-width">
+          <h1>Welcome to Our Recipe Website</h1>
+          <p>
+            <em>Discover and enjoy a variety of delicious recipes.</em>
+          </p>
+        </div>
+      </header>
 
-    <main class="content-width">
-      <h1>Recipes</h1>
-      <!-- Display recipes -->
-      {% for recipe in recipes %}
-      <div class="recipe">
-        <h2>{{ recipe.title }}</h2>
-        <p>{{ recipe.content }}</p>
+      {% include 'navbar.html' %}
+
+      <div class="content-width">
+        <h2>Featured Recipes</h2>
+        <div class="recipe">
+          <h3>Sweet Strawberry Cheesecake</h3>
+          <p>
+            Chocolate shortbread caramels tootsie roll tiramisu sweet dessert
+            apple pie fruitcake.
+            <strong>Croissant icing chupa chups</strong> sweet roll cake tart
+            fruitcake soufflé jujubes. Shortbread brownie tootsie roll ice cream
+            pudding dessert marshmallow sesame snaps. Cake pie jujubes lemon
+            drops sesame snaps soufflé cookie jujubes wafer. Caramels ice cream
+            fruitcake pastry cheesecake chocolate tootsie roll cake marshmallow.
+            Pie candy canes cupcake dragée bonbon fruitcake marzipan. Tootsie
+            roll halvah bonbon cake muffin gummies. Bonbon cotton candy marzipan
+            cake sesame snaps chupa chups donut dessert. Macaroon gummies
+            macaroon biscuit chocolate carrot cake gummi bears.
+          </p>
+        </div>
+
+        <!-- Add more featured recipes as needed -->
+
+        <h2>Explore All Recipes</h2>
+        <p>
+          Discover a wide range of recipes and culinary delights. Start
+          exploring now!
+        </p>
+        <a href="{{ url_for('recipe_page') }}" class="explore-button"
+          >Explore Recipes</a
+        >
       </div>
-      {% endfor %}
     </main>
   </body>
 </html>

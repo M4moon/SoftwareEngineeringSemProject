@@ -1,13 +1,8 @@
-<!-- templates/signin.html -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sign In</title>
     <link
       href="{{ url_for('static', filename='styles.css') }}"
@@ -15,19 +10,30 @@
     />
   </head>
   <body>
-    {% include 'navbar.html' %}
+    <main>
+      <header>
+        <div class="content-width">
+          <h1>Sign In</h1>
+        </div>
+      </header>
 
-    <main class="content-width">
-      <h1>Sign In</h1>
-      <form method="post" action="{{ url_for('signin') }}">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required />
+      {% include 'navbar.html' %}
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required />
+      <div class="content-width">
+        <form
+          method="post"
+          action="{{ url_for('signin') }}"
+          class="signin-form"
+        >
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
 
-        <button type="submit">Sign In</button>
-      </form>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit">Sign In</button>
+        </form>
+      </div>
     </main>
   </body>
 </html>

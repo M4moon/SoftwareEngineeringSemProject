@@ -1,14 +1,13 @@
 <!-- templates/navbar.html -->
 <nav class="navbar">
   <div class="content-width">
-    <a href="/">Home</a>
+    <a href="/home">Home</a>
     <a href="#">About</a>
     <form class="search-form" action="{{ url_for('search') }}" method="GET">
       <input type="text" name="query" placeholder="Search..." />
       <button type="submit">Search</button>
     </form>
     <a href="{{ url_for('signin') }}">Sign In</a>
-    <a href="{{ url_for('upload_recipe') }}">Upload Recipe</a>
   </div>
 </nav>
 
@@ -47,5 +46,30 @@
     color: white;
     border: none;
     cursor: pointer;
+  }
+  /* Add these styles for the search bar */
+  input[type="text"] {
+    border-radius: 20px; /* Adjust the value for more or less rounding */
+    padding: 10px;
+    color: hsl(0, 0%, 10%); /* Set text color to a dark color */
+    background-color: hsl(0, 0%, 100%); /* Set background color to white */
+    border: none;
+    font-size: 16px;
+  }
+
+  /* Add these styles for the search button */
+  input[type="submit"] {
+    border-radius: 20px; /* Adjust the value for more or less rounding */
+    padding: 10px 20px; /* Adjust padding as needed */
+    cursor: pointer;
+    background-color: hsl(280, 50%, 40%);
+    color: hsl(300, 50%, 90%);
+    border: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+
+  input[type="submit"]:hover {
+    background-color: hsl(280, 50%, 30%);
   }
 </style>
