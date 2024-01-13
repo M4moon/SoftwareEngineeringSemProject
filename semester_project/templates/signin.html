@@ -19,7 +19,7 @@
 
       {% include 'navbar.html' %}
 
-      <div class="content-width">
+      <div class="signin-form">
         <form
           method="post"
           action="{{ url_for('signin') }}"
@@ -33,6 +33,13 @@
 
           <button type="submit">Sign In</button>
         </form>
+      </div>
+      <!-- Add this below the existing form in your HTML -->
+      <div class="forgot-password">
+        <p>
+          Forgot Password?
+          <a href="{{ url_for('forgot_password') }}">Reset it here</a>.
+        </p>
       </div>
     </main>
   </body>

@@ -8,6 +8,7 @@
       <button type="submit">Search</button>
     </form>
     <a href="{{ url_for('signin') }}">Sign In</a>
+    <a href="{{ url_for('recipe_page') }}">Recipes</a>
   </div>
 </nav>
 
@@ -46,6 +47,8 @@
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 10px;
+    font-family: "Consolas", monospace;
   }
   /* Add these styles for the search bar */
   input[type="text"] {

@@ -41,6 +41,10 @@ def signin():
         return redirect(url_for('index'))
 
     return render_template('signin.html')
+# Add this route in your app.py
+@app.route('/forgot_password')
+def forgot_password():
+    return render_template('forgot_password.html')
 
 
 if __name__ == '__main__':
