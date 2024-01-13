@@ -1,0 +1,23 @@
+<!-- templates/navbar.html -->
+
+<div class="container">
+  <div class="logo-container">
+    <a href="/">
+      <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" />
+    </a>
+    <h1>Shaolin School <sub>Welcome, Students!</sub></h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Edit User Details</a></li>
+      <li><a href="#">Upload Videos</a></li>
+    </ul>
+    <form action="/search" method="post">
+      <label for="query">Search YouTube videos:</label>
+      <div class="search-container">
+        <input type="text" id="query" name="query" required />
+        <button type="submit">Search</button>
+      </div>
+    </form>
+  </nav>
+</div>

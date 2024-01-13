@@ -1,0 +1,147 @@
+/* style.css */
+
+@font-face {
+    font-family: 'Akira Expanded';
+    src: url('C:\\USERS\\HP OMEN\\APPDATA\\LOCAL\\MICROSOFT\\WINDOWS\\FONTS\\AKIRA EXPANDED DEMO.otf') format('opentype');
+    font-weight: normal;
+}
+
+header {
+    font-family: 'Akira Expanded', sans-serif;
+    background-color: whitesmoke;
+    padding: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    color: red;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+header h1 sub {
+    font-size: 0.3em; /* Adjust the size as needed */
+}
+
+nav {
+    font-family: 'Akira Expanded', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+
+nav a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 8px 15px;
+}
+
+/* ... (other styles) */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto; /* Added margin to the container */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.search-container {
+    display: flex;
+    border-radius: 5px; /* Rounded corners for search bar */
+    overflow: hidden; /* Hide overflowing rounded corners */
+}
+
+form label {
+    display: none;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-top-left-radius: 5px; /* Rounded top-left corner */
+    border-bottom-left-radius: 5px; /* Rounded bottom-left corner */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #fff;
+    color: #ff0000;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-top-right-radius: 5px; /* Rounded top-right corner */
+    border-bottom-right-radius: 5px; /* Rounded bottom-right corner */
+}
+
+.login-container {
+    background-color: grey;
+    padding: 40px 0;
+    border-radius: 10px; /* Rounded corners for the login container */
+}
+
+.login-container h2 {
+    text-align: center;
+}
+
+.login-container form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 5px; /* Rounded corners for input fields */
+}
+
+.login-container button {
+    padding: 10px 15px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px; /* Rounded corners for the button */
+}
