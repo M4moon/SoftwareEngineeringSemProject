@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>A Demo Font Family Page</title>
     <link
-      href="{{ url_for('static', filename='style.css') }}"
+      href="{{ url_for('static', filename='styles.css') }}"
       rel="stylesheet"
     />
   </head>
@@ -20,6 +20,8 @@
           </p>
         </div>
       </header>
+
+      {% include 'navbar.html' %}
 
       <div class="content-width">
         <p>

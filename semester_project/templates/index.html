@@ -6,32 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Recipe Website</title>
     <link
-      href="{{ url_for('static', filename='style.css') }}"
+      href="{{ url_for('static', filename='styles.css') }}"
       rel="stylesheet"
     />
   </head>
   <body>
-    <main>
-      <header>
-        <div class="content-width">
-          <h1>Welcome to the Recipe Website</h1>
-          <p><em>Explore our delicious recipes!</em></p>
-        </div>
-      </header>
+    {% include 'navbar.html' %}
 
-      <div class="content-width">
-        <section>
-          <h2>Featured Recipes</h2>
-          <!-- Add content for featured recipes -->
-        </section>
-
-        <section>
-          <h2>Latest Additions</h2>
-          <!-- Add content for the latest recipes -->
-        </section>
-
-        <!-- Add more sections as needed -->
+    <main class="content-width">
+      <h1>Recipes</h1>
+      <!-- Display recipes -->
+      {% for recipe in recipes %}
+      <div class="recipe">
+        <h2>{{ recipe.title }}</h2>
+        <p>{{ recipe.content }}</p>
       </div>
+      {% endfor %}
     </main>
   </body>
 </html>

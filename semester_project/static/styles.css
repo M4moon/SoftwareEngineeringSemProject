@@ -1,0 +1,46 @@
+/* static/styles.css */
+body {
+  margin: 0;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 10%);
+  line-height: 1.5;
+}
+
+.content-width {
+  max-width: 21cm; /* A4 size width in centimeters */
+  width: calc(100% - 4rem);
+  margin: 0 auto;
+}
+
+main {
+  margin-bottom: 4rem;
+}
+
+header {
+  margin-bottom: 4rem;
+  padding: 2rem 0;
+  background-color: hsl(280, 50%, 40%);
+  border-bottom: 4px solid hsl(300, 50%, 50%);
+  color: hsl(300, 50%, 90%);
+}
+
+header p {
+  color: hsl(300, 50%, 85%);
+}
+
+.content-width h1 {
+  font-size: 2.5em; /* Adjust the font size as needed */
+  margin-bottom: 0.5rem;
+}
+
+.content-width h2 {
+  font-size: 2em; /* Adjust the font size as needed */
+  color: hsl(280, 50%, 40%);
+}
+
+.content-width h3 {
+  font-size: 1.5em; /* Adjust the font size as needed */
+  color: hsl(280, 50%, 40%);
+}
+
+/* Add more styling as needed */

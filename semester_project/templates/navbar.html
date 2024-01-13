@@ -1,23 +1,51 @@
 <!-- templates/navbar.html -->
-
-<div class="container">
-  <div class="logo-container">
-    <a href="/">
-      <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" />
-    </a>
-    <h1>Shaolin School <sub>Welcome, Students!</sub></h1>
-  </div>
-  <nav>
-    <ul>
-      <li><a href="#">Edit User Details</a></li>
-      <li><a href="#">Upload Videos</a></li>
-    </ul>
-    <form action="/search" method="post">
-      <label for="query">Search YouTube videos:</label>
-      <div class="search-container">
-        <input type="text" id="query" name="query" required />
-        <button type="submit">Search</button>
-      </div>
+<nav class="navbar">
+  <div class="content-width">
+    <a href="/">Home</a>
+    <a href="#">About</a>
+    <form class="search-form" action="{{ url_for('search') }}" method="GET">
+      <input type="text" name="query" placeholder="Search..." />
+      <button type="submit">Search</button>
     </form>
-  </nav>
-</div>
+    <a href="{{ url_for('signin') }}">Sign In</a>
+    <a href="{{ url_for('upload_recipe') }}">Upload Recipe</a>
+  </div>
+</nav>
+
+<style>
+  /* Add navbar styling here */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: hsl(280, 50%, 40%);
+    padding: 1rem 0;
+    text-align: center;
+    color: hsl(300, 50%, 90%);
+  }
+
+  .navbar a {
+    color: hsl(300, 50%, 90%);
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.2em; /* Adjust the font size as needed */
+  }
+
+  .search-form {
+    display: inline-block;
+    margin-right: auto;
+  }
+
+  .search-form input {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .search-form button {
+    padding: 0.5rem 1rem;
+    background-color: hsl(120, 60%, 50%);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+</style>
