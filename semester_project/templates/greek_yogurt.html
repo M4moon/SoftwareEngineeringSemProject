@@ -1,0 +1,64 @@
+<!-- templates/greek_yogurt_parfait.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Greek Yogurt Parfait</title>
+    <link
+      href="{{ url_for('static', filename='styles.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="content-width">
+          <h1>Greek Yogurt Parfait</h1>
+        </div>
+      </header>
+
+      {% include 'navbar.html' %}
+
+      <div class="content-width">
+        <div class="recipe-container">
+          <div class="recipe-column">
+            <h2>Ingredients:</h2>
+            <ul>
+              <li>1 cup Greek yogurt</li>
+              <li>1/2 cup granola</li>
+              <li>1/2 cup mixed berries</li>
+              <li>Honey for drizzling</li>
+            </ul>
+            <h2>Instructions:</h2>
+            <ol>
+              <li>Layer yogurt, granola, and berries in a glass.</li>
+              <li>Repeat until ingredients are used.</li>
+              <li>Drizzle with honey.</li>
+            </ol>
+            <h2>Assemble Time:</h2>
+            <p>5 minutes</p>
+          </div>
+          <div class="recipe-column urdu">
+            <h2>اجزاء:</h2>
+            <ul>
+              <li>1 کپ یونانی دہی</li>
+              <li>1/2 کپ گرینولا</li>
+              <li>1/2 کپ مختلط بیریز</li>
+              <li>ڈرزل کے لئے شہد</li>
+            </ul>
+            <h2>ہدایات:</h2>
+            <ol>
+              <li>گلاس میں ڈہی، گرینولا، اور بیریز کو لیئر کریں۔</li>
+              <li>اجزاء ختم ہونے تک دہیں۔</li>
+              <li>شہد چھڑکیں۔</li>
+            </ol>
+            <h2>تخلیقی وقت:</h2>
+            <p>5 منٹ</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!-- templates/classic_pancakes.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Classic Pancakes</title>
+    <link
+      href="{{ url_for('static', filename='styles.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="content-width">
+          <h1>Classic Pancakes</h1>
+        </div>
+      </header>
+
+      {% include 'navbar.html' %}
+
+      <div class="content-width">
+        <div class="recipe-container">
+          <div class="recipe-column">
+            <h2>Ingredients:</h2>
+            <ul>
+              <li>1 cup all-purpose flour</li>
+              <li>2 tablespoons sugar</li>
+              <li>1 teaspoon baking powder</li>
+              <li>1/2 teaspoon salt</li>
+              <li>1 cup milk</li>
+              <li>1 egg</li>
+              <li>2 tablespoons melted butter</li>
+            </ul>
+            <h2>Instructions:</h2>
+            <ol>
+              <li>In a bowl, whisk together dry ingredients.</li>
+              <li>In another bowl, mix wet ingredients.</li>
+              <li>Combine wet and dry ingredients until just mixed.</li>
+              <li>
+                Cook spoonfuls of batter on a hot griddle for 2-3 minutes per
+                side.
+              </li>
+            </ol>
+            <h2>Cook Time:</h2>
+            <p>10 minutes</p>
+          </div>
+          <div class="recipe-column urdu">
+            <h2>اجزاء:</h2>
+            <ul>
+              <li>1 کپ میدہ</li>
+              <li>2 چمچ شکر</li>
+              <li>1 چائے کا چمچ بیکنگ پاؤڈر</li>
+              <li>1/2 چائے کا چمچ نمک</li>
+              <li>1 کپ دودھ</li>
+              <li>1 انڈا</li>
+              <li>2 چمچ گھی</li>
+            </ul>
+            <h2>ہدایات:</h2>
+            <ol>
+              <li>ایک باؤل میں خشک اجزاء کو چھان لیں۔</li>
+              <li>ایک اور باؤل میں گیلا اجزاء ملا لیں۔</li>
+              <li>گیلا اور خشک اجزاء کو صرف ملا لیں۔</li>
+              <li>گرڈل پر 2-3 منٹ ہر طرف سے چمچ بھر بیٹر کو پکائیں۔</li>
+            </ol>
+            <h2>پکانے کا وقت:</h2>
+            <p>10 منٹ</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

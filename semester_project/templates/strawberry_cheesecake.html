@@ -1,0 +1,69 @@
+<!-- templates/strawberry_yogurt_parfait.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strawberry Yogurt Parfait</title>
+    <link
+      href="{{ url_for('static', filename='styles.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="content-width">
+          <h1>Strawberry Yogurt Parfait</h1>
+        </div>
+      </header>
+
+      {% include 'navbar.html' %}
+
+      <div class="content-width">
+        <div class="recipe-container">
+          <div class="recipe-column">
+            <h2>Ingredients / اجزاء:</h2>
+            <ul>
+              <li>1 cup Greek yogurt / 1 کپ یونانی دہی</li>
+              <li>1/2 cup granola / 1/2 کپ گرینولا</li>
+              <li>1/2 cup sliced strawberries / 1/2 کپ کٹی ہوئی انار</li>
+              <li>Honey for drizzling / ڈرزل کے لئے شہد</li>
+            </ul>
+            <h2>Instructions / ہدایات:</h2>
+            <ol>
+              <li>
+                Layer yogurt, granola, and sliced strawberries in a glass. /
+                گلاس میں ڈہی، گرینولا، اور کٹی ہوئی انار کو لیئر کریں۔
+              </li>
+              <li>
+                Repeat until ingredients are used. / اجزاء ختم ہونے تک دہیں۔
+              </li>
+              <li>Drizzle with honey. / شہد چھڑکیں۔</li>
+            </ol>
+            <h2>Assemble Time / تخلیقی وقت:</h2>
+            <p>5 minutes / 5 منٹ</p>
+          </div>
+          <div class="recipe-column urdu">
+            <h2>اجزاء:</h2>
+            <ul>
+              <li>1 کپ یونانی دہی</li>
+              <li>1/2 کپ گرینولا</li>
+              <li>1/2 کپ کٹی ہوئی انار</li>
+              <li>ڈرزل کے لئے شہد</li>
+            </ul>
+            <h2>ہدایات:</h2>
+            <ol>
+              <li>گلاس میں ڈہی، گرینولا، اور کٹی ہوئی انار کو لیئر کریں۔</li>
+              <li>اجزاء ختم ہونے تک دہیں۔</li>
+              <li>شہد چھڑکیں۔</li>
+            </ol>
+            <h2>تخلیقی وقت:</h2>
+            <p>5 منٹ</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

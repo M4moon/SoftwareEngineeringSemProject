@@ -1,0 +1,66 @@
+<!-- templates/breakfast_burrito.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breakfast Burrito</title>
+    <link
+      href="{{ url_for('static', filename='styles.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="content-width">
+          <h1>Breakfast Burrito</h1>
+        </div>
+      </header>
+
+      {% include 'navbar.html' %}
+
+      <div class="content-width">
+        <div class="recipe-container">
+          <div class="recipe-column">
+            <h2>Ingredients:</h2>
+            <ul>
+              <li>2 large eggs</li>
+              <li>1/4 cup black beans</li>
+              <li>2 tablespoons salsa</li>
+              <li>1/4 cup shredded cheese</li>
+              <li>1 large flour tortilla</li>
+            </ul>
+            <h2>Instructions:</h2>
+            <ol>
+              <li>Scramble eggs and cook with beans.</li>
+              <li>Add salsa and cheese.</li>
+              <li>Spoon onto a tortilla and roll.</li>
+            </ol>
+            <h2>Cook Time:</h2>
+            <p>10 minutes</p>
+          </div>
+          <div class="recipe-column urdu">
+            <h2>بریکفاسٹ بوریٹو:</h2>
+            <ul>
+              <li>2 بڑے انڈے</li>
+              <li>1/4 کپ کالے چنے</li>
+              <li>2 چمچ سالسا</li>
+              <li>1/4 کپ کٹا ہوا پنیر</li>
+              <li>1 بڑا پروٹین ٹارٹیلا</li>
+            </ul>
+            <h2>ہدایات:</h2>
+            <ol>
+              <li>انڈے ہلکے ہلکے ہلا کر چنوں کے ساتھ پکائیں۔</li>
+              <li>سالسا اور پنیر شامل کریں۔</li>
+              <li>ٹارٹیلا پر چمچ بھر مواد چڑھائیں اور رول کریں۔</li>
+            </ol>
+            <h2>پکانے کا وقت:</h2>
+            <p>10 منٹ</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

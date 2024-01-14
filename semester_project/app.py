@@ -45,6 +45,21 @@ def signin():
 @app.route('/forgot_password')
 def forgot_password():
     return render_template('forgot_password.html')
+@app.route('/classic_pancakes')  # Adjust the route based on the recipe number
+def classic_pancakes():
+    return render_template('classic_pancakes.html')
+@app.route('/avo_toast')  # Adjust the route based on the recipe number
+def avo_toast():
+    return render_template('Avocado_toast.html')
+@app.route('/greek_yoghurt')  # Adjust the route based on the recipe number
+def greek_yoghurt():
+    return render_template('greek_yogurt.html')
+@app.route('/breaky_burrito')  # Adjust the route based on the recipe number
+def break_burrito():
+    return render_template('burrito.html')
+@app.route('/straw_cheesecake')  # Adjust the route based on the recipe number
+def straw_cheesecake():
+    return render_template('strawberry_cheesecake.html')
 
 
 if __name__ == '__main__':

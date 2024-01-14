@@ -1,5 +1,10 @@
 /* static/styles.css */
-
+@font-face {
+  font-family: 'Noto Sans Arabic';
+  src: url('fonts/NotoSansArabic-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   font-family: 'Consolas', monospace;
 }
@@ -112,5 +117,35 @@ header p {
 .explore-button:hover{
   background-color: hsl(300, 50%, 50%)
 }
+.recipe-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 
+.recipe-column {
+  width: 48%; /* Adjust the width as needed */
+  text-align: left;
+}
+
+.recipe-column h2 {
+  border-bottom: 1px solid #000; /* Add a line between sections */
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.recipe-column ul {
+  list-style-position: outside; /* Move bullets to the right of the text */
+  margin-left: 20px; /* Adjust margin as needed */
+}
+
+.recipe-column.urdu {
+  text-align: right; /* Align Urdu column to the right */
+  font-family: 'Tahoma', sans-serif; /* Use the Noto Sans Arabic font */
+  
+
+}
+.recipe-column.urdu:h2{
+font-family:Tahoma, sans-serif ;
+}
 /* Add more styling as needed */
