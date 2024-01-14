@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us - Recipe Website</title>
+    <link
+      href="{{ url_for('static', filename='styles.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <div class="content-width">
+          <h1>About Us</h1>
+          <p>
+            <em
+              >Discover the story behind our passion for delicious recipes.</em
+            >
+          </p>
+        </div>
+      </header>
+
+      {% include 'navbar.html' %}
+
+      <div class="content-width">
+        <h2>Our Project</h2>
+        <p>
+          Our Recipe Website is not just a collection of recipes; it's the
+          result of a semester-long software engineering project. This platform
+          was developed to showcase our skills and knowledge in building dynamic
+          web applications using Python Flask.
+        </p>
+        <p>
+          Throughout the project, we focused on creating a user-friendly
+          experience, incorporating features like curated recipes, community
+          engagement, and constant innovation, all powered by the precision of
+          Python Flask.
+        </p>
+
+        <h2>Project Goals</h2>
+        <ul>
+          <li>
+            <strong>Culinary Inspiration:</strong> To inspire users to explore
+            new recipes and discover the joy of cooking.
+          </li>
+          <li>
+            <strong>Technical Proficiency:</strong> To demonstrate our
+            proficiency in using Python Flask for web development.
+          </li>
+          <li>
+            <strong>Community Interaction:</strong> To foster a community of
+            food enthusiasts sharing their culinary experiences.
+          </li>
+          <li>
+            <strong>Innovation:</strong> To stay ahead of the curve by
+            incorporating new features and staying updated on culinary trends
+            and technology.
+          </li>
+        </ul>
+
+        <h2>Meet the Team</h2>
+        <p>
+          Our Recipe Website was created by a dedicated team of software
+          engineering students. Get to know the individuals who contributed to
+          this project:
+        </p>
+        <ul>
+            <li>Mamoon Khan
+            </li>
+            <li>Haadin Zaman
+            </li>
+            <li>Saad Khan
+            </li>
+          
+        <h2>Get in Touch</h2>
+        <p>
+          Have questions, suggestions, or just want to say hello? We'd love to
+          hear from you! Contact us via email or connect on social media.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

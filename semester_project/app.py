@@ -98,6 +98,10 @@ def Jollof():
 def Beef_Nihari():
     return render_template('beef_nihari.html')
 
+@app.route('/About')  # Adjust the route based on the recipe number
+def About():
+    return render_template('aboutus.html')
+
 
 
 
