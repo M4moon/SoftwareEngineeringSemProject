@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Egg and Cheese Breakfast Sandwich</title>
+    <link
+      href="{{ url_for('static', filename='styles.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="content-width">
+          <h1>Egg and Cheese Breakfast Sandwich</h1>
+        </div>
+      </header>
+
+      {% include 'navbar.html' %}
+
+      <div class="content-width">
+        <div class="recipe-container">
+          <div class="recipe-column">
+            <h2>Ingredients:</h2>
+            <ul>
+              <li>1 English muffin</li>
+              <li>1 egg</li>
+              <li>1 slice cheese</li>
+              <li>Salt and pepper to taste</li>
+            </ul>
+            <h2>Instructions:</h2>
+            <ol>
+              <li>Toast the English muffin.</li>
+              <li>Cook the egg and season with salt and pepper.</li>
+              <li>Assemble the sandwich with cheese.</li>
+            </ol>
+            <h2>Cook Time:</h2>
+            <p>5 minutes</p>
+          </div>
+          <div class="recipe-column urdu">
+            <h2>انڈا اور چیز بریکفاسٹ سینڈوچ:</h2>
+            <ul>
+              <li>1 انگلش مفن</li>
+              <li>1 انڈا</li>
+              <li>1 پتی چیز</li>
+              <li>ذائقہ اور کالی مٹھی کے لئے</li>
+            </ul>
+            <h2>ہدایات:</h2>
+            <ol>
+              <li>انگلش مفن ٹوسٹ کریں۔</li>
+              <li>انڈا پکائیں اور نمک اور کالی مٹھی سے چھڑکیں۔</li>
+              <li>چیز کے ساتھ سینڈوچ بنائیں۔</li>
+            </ol>
+            <h2>پکانے کا وقت:</h2>
+            <p>5 منٹ</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

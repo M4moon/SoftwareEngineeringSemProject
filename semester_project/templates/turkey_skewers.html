@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turkey and Veggie Skewers</title>
+    <link
+      href="{{ url_for('static', filename='styles.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="content-width">
+          <h1>Turkey and Veggie Skewers</h1>
+        </div>
+      </header>
+
+      {% include 'navbar.html' %}
+
+      <div class="content-width">
+        <div class="recipe-container">
+          <div class="recipe-column">
+            <h2>Ingredients:</h2>
+            <ul>
+              <li>1 pound ground turkey</li>
+              <li>1 bell pepper, cut into chunks</li>
+              <li>1 zucchini, sliced</li>
+              <li>1 red onion, cut into wedges</li>
+              <li>2 tablespoons olive oil</li>
+              <li>1 teaspoon cumin</li>
+              <li>Salt and pepper to taste</li>
+            </ul>
+            <h2>Instructions:</h2>
+            <ol>
+              <li>Preheat grill or oven.</li>
+              <li>Mix ground turkey with cumin, salt, and pepper.</li>
+              <li>Form turkey mixture into small meatballs.</li>
+              <li>
+                Thread turkey, bell pepper, zucchini, and onion onto skewers.
+              </li>
+              <li>Brush with olive oil and grill until turkey is cooked.</li>
+            </ol>
+            <h2>Cook Time:</h2>
+            <p>15 minutes</p>
+          </div>
+          <div class="recipe-column urdu">
+            <h2>ٹرکی اینڈ ویجی اسکیورز:</h2>
+            <ul>
+              <li>1 پاؤنڈ گراؤنڈ ٹرکی</li>
+              <li>1 بیل پیپر، ٹکڑوں میں کاٹا ہوا</li>
+              <li>1 زکینی، کٹی ہوئی</li>
+              <li>1 لال پیاز، گٹھیوں میں کاٹا ہوا</li>
+              <li>2 کھانے کے چمچ زیتون کا تیل</li>
+              <li>1 چائے کا چمچ کمین</li>
+              <li>ذائقہ اور کالی مٹھی کے لئے</li>
+            </ul>
+            <h2>ہدایات:</h2>
+            <ol>
+              <li>گرل یا اوون گرم کریں۔</li>
+              <li>گراؤنڈ ٹرکی کو کمین، نمک، اور کالی مٹھی کے ساتھ ملایں۔</li>
+              <li>ٹرکی کا مکسچر چھوٹے میٹ بالز میں بنائیں۔</li>
+              <li>ٹرکی، بیل پیپر، زکینی، اور پیاز کو اسکیورز پر چھڑکیں۔</li>
+              <li>زیتون کا تیل لگائیں اور ٹرکی پک جانے تک گرل کریں۔</li>
+            </ol>
+            <h2>پکانے کا وقت:</h2>
+            <p>15 منٹ</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

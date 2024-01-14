@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grilled Chicken Salad</title>
+    <link
+      href="{{ url_for('static', filename='styles.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="content-width">
+          <h1>Grilled Chicken Salad</h1>
+        </div>
+      </header>
+
+      {% include 'navbar.html' %}
+
+      <div class="content-width">
+        <div class="recipe-container">
+          <div class="recipe-column">
+            <h2>Ingredients:</h2>
+            <ul>
+              <li>2 boneless, skinless chicken breasts</li>
+              <li>6 cups mixed salad greens</li>
+              <li>1 cup cherry tomatoes, halved</li>
+              <li>1 cucumber, sliced</li>
+              <li>1/4 cup balsamic vinaigrette</li>
+            </ul>
+            <h2>Instructions:</h2>
+            <ol>
+              <li>Season chicken with salt and pepper, grill until cooked.</li>
+              <li>Slice grilled chicken.</li>
+              <li>
+                Toss salad greens, tomatoes, cucumber, and sliced chicken.
+              </li>
+              <li>Drizzle with balsamic vinaigrette.</li>
+            </ol>
+            <h2>Cook Time:</h2>
+            <p>15 minutes</p>
+          </div>
+          <div class="recipe-column urdu">
+            <h2>گرلڈ چکن سلاد:</h2>
+            <ul>
+              <li>2 بونلیس، چمکدار چکن بریسٹس</li>
+              <li>6 کپس مختلف سیلیڈ گرینز</li>
+              <li>1 کپ چیری ٹماٹر، ہیلو</li>
+              <li>1 کھیرا، چکیلاٹ</li>
+              <li>1/4 کپ بالزامک وائنگیریٹ</li>
+            </ul>
+            <h2>ہدایات:</h2>
+            <ol>
+              <li>
+                چکن کو نمک اور کالی مٹھی سے چھڑکیں، گرل کریں جب تک پکا ہو جائے۔
+              </li>
+              <li>گرل چکن کو چکیلاٹ میں کاٹیں۔</li>
+              <li>
+                سیلیڈ گرینز، ٹماٹر، کھیرا، اور چکیلاٹ چکن چھلکے کے ساتھ چھڑکیں۔
+              </li>
+              <li>بالزامک وائنگیریٹ کے ساتھ چھڑکیں۔</li>
+            </ol>
+            <h2>پکانے کا وقت:</h2>
+            <p>15 منٹ</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

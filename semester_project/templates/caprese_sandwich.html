@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caprese Sandwich</title>
+    <link
+      href="{{ url_for('static', filename='styles.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="content-width">
+          <h1>Caprese Sandwich</h1>
+        </div>
+      </header>
+
+      {% include 'navbar.html' %}
+
+      <div class="content-width">
+        <div class="recipe-container">
+          <div class="recipe-column">
+            <h2>Ingredients:</h2>
+            <ul>
+              <li>4 ciabatta rolls</li>
+              <li>1 cup fresh mozzarella, sliced</li>
+              <li>2 large tomatoes, sliced</li>
+              <li>1 cup fresh basil leaves</li>
+              <li>2 tablespoons balsamic glaze</li>
+            </ul>
+            <h2>Instructions:</h2>
+            <ol>
+              <li>
+                Slice ciabatta rolls and layer with mozzarella, tomatoes, and
+                basil.
+              </li>
+              <li>Drizzle with balsamic glaze.</li>
+              <li>Assemble sandwiches and serve.</li>
+            </ol>
+            <h2>Prep Time:</h2>
+            <p>15 minutes</p>
+          </div>
+          <div class="recipe-column urdu">
+            <h2>کاپریز سینڈوچ:</h2>
+            <ul>
+              <li>4 چیاباٹا رولز</li>
+              <li>1 کپ تازہ موزریلا، کاٹی ہوئی</li>
+              <li>2 بڑے ٹماٹر، کاٹے ہوئے</li>
+              <li>1 کپ تازہ بیسل پتہ</li>
+              <li>2 کھانے کے چمچ بالسامک گلیز</li>
+            </ul>
+            <h2>ہدایات:</h2>
+            <ol>
+              <li>
+                چیاباٹا رولز کاٹیں اور انہیں موزریلا، ٹماٹر، اور بیسل کے ساتھ
+                لےئےں۔
+              </li>
+              <li>بالسامک گلیز سے چھڑکیں۔</li>
+              <li>سینڈوچ جمع کریں اور سرو کریں۔</li>
+            </ol>
+            <h2>تیاری کا وقت:</h2>
+            <p>15 منٹ</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

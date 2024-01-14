@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chicken Biryani</title>
+    <link
+      href="{{ url_for('static', filename='styles.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="content-width">
+          <h1>Chicken Biryani</h1>
+        </div>
+      </header>
+
+      {% include 'navbar.html' %}
+
+      <div class="content-width">
+        <div class="recipe-container">
+          <div class="recipe-column">
+            <h2>Ingredients:</h2>
+            <ul>
+              <li>2 cups basmati rice, soaked</li>
+              <li>500g chicken, cut into pieces</li>
+              <li>1 cup yogurt</li>
+              <li>2 large onions, thinly sliced</li>
+              <li>2 tomatoes, chopped</li>
+              <li>1/4 cup cooking oil or ghee</li>
+              <li>2 tablespoons biryani masala</li>
+              <li>1 tablespoon ginger-garlic paste</li>
+              <li>1 teaspoon turmeric powder</li>
+              <li>1 teaspoon red chili powder</li>
+              <li>4 cups water</li>
+              <li>Fresh coriander and mint for garnish</li>
+            </ul>
+            <h2>Instructions:</h2>
+            <ol>
+              <li>
+                Marinate chicken with yogurt, biryani masala, ginger-garlic
+                paste, turmeric, and red chili powder.
+              </li>
+              <li>In a pan, heat oil and sauté onions until golden brown.</li>
+              <li>
+                Add marinated chicken and cook until the chicken is browned.
+              </li>
+              <li>
+                Layer soaked rice over the chicken, add tomatoes, and pour
+                water.
+              </li>
+              <li>
+                Cook until rice is done. Garnish with fresh coriander and mint.
+              </li>
+            </ol>
+            <h2>Cook Time:</h2>
+            <p>45 minutes</p>
+          </div>
+          <div class="recipe-column urdu">
+            <h2>چکن بریانی:</h2>
+            <ul>
+              <li>2 کپس بسمتی چاول، بھگوئے گئے</li>
+              <li>500 گرام چکن، ٹکڑوں میں کاٹا ہوا</li>
+              <li>1 کپ دہی</li>
+              <li>2 بڑے پیاز، پتلے ہوئے</li>
+              <li>2 ٹماٹر، کٹا ہوا</li>
+              <li>1/4 کپ ککنگ آئل یا گھی</li>
+              <li>2 کھانے کے چمچ بریانی مصالحہ</li>
+              <li>1 کھانے کا چمچ ادرک لہسن پیسٹ</li>
+              <li>1 چائے کا چمچ ہلدی پاؤڈر</li>
+              <li>1 چائے کا چمچ لال مرچ پاؤڈر</li>
+              <li>4 کپس پانی</li>
+              <li>تازہ دھنیا اور پودینہ چھڑکنے کے لئے</li>
+            </ul>
+            <h2>ہدایات:</h2>
+            <ol>
+              <li>
+                چکن کو دہی، بریانی مصالحہ، ادرک لہسن پیسٹ، ہلدی، اور لال مرچ
+                پاؤڈر کے ساتھ مرینیٹ کریں۔
+              </li>
+              <li>
+                ایک پین میں تیل گرم کریں اور پیاز کو سنگھاڑے ہوئے ہلدی پر سیکھ
+                لیں۔
+              </li>
+              <li>مرینیٹ چکن ڈالیں اور چکن سنگھاڑے ہو جانے تک پکائیں۔</li>
+              <li>
+                چکن کے اوپر بھگوئے گئے چاول رکھیں، ٹماٹر ڈالیں اور پانی چھڑکیں۔
+              </li>
+              <li>چاول پکنے تک پکائیں۔ تازہ دھنیا اور پودینہ سے چھڑکیں۔</li>
+            </ol>
+            <h2>پکانے کا وقت:</h2>
+            <p>45 منٹ</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

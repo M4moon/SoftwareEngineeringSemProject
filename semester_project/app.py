@@ -57,9 +57,27 @@ def greek_yoghurt():
 @app.route('/breaky_burrito')  # Adjust the route based on the recipe number
 def break_burrito():
     return render_template('burrito.html')
+@app.route('/egg_cheese_sando')  # Adjust the route based on the recipe number
+def egg_cheese_sando():
+    return render_template('egg_cheese_sando.html')
 @app.route('/straw_cheesecake')  # Adjust the route based on the recipe number
 def straw_cheesecake():
     return render_template('strawberry_cheesecake.html')
+@app.route('/Chicken_Salad')  # Adjust the route based on the recipe number
+def Chicken_Salad():
+    return render_template('chicken_salad.html')
+@app.route('/Caprese_Sando')  # Adjust the route based on the recipe number
+def Caprese_Sando():
+    return render_template('caprese_sandwich.html')
+@app.route('/Turkey_Skewers')  # Adjust the route based on the recipe number
+def Turkey_Skewers():
+    return render_template('turkey_skewers.html')
+
+@app.route('/Chi_biryani')  # Adjust the route based on the recipe number
+def Chicken_Biryani():
+    return render_template('chick_biryani.html')
+
+
 
 
 if __name__ == '__main__':
