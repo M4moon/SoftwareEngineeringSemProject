@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beef Nihari</title>
+    <link
+      href="{{ url_for('static', filename='styles.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="content-width">
+          <h1>Beef Nihari</h1>
+        </div>
+      </header>
+
+      {% include 'navbar.html' %}
+
+      <div class="content-width">
+        <div class="recipe-container">
+          <div class="recipe-column">
+            <h2>Ingredients:</h2>
+            <ul>
+              <li>1 kg beef shank or stew meat, cut into pieces</li>
+              <li>1/2 cup wheat flour (optional for thickening)</li>
+              <li>1/4 cup ghee or vegetable oil</li>
+              <li>2 large onions, thinly sliced</li>
+              <li>4 cloves garlic, minced</li>
+              <li>2-inch piece of ginger, grated</li>
+              <li>
+                2 tablespoons Nihari masala (available at South Asian grocery
+                stores)
+              </li>
+              <li>1 teaspoon turmeric powder</li>
+              <li>1 teaspoon red chili powder</li>
+              <li>Salt to taste</li>
+              <li>6 cups water</li>
+              <li>Fresh coriander leaves for garnish</li>
+              <li>Ginger slices for garnish</li>
+              <li>Sliced green chilies for garnish</li>
+            </ul>
+            <h2>For Garnish:</h2>
+            <ul>
+              <li>Fresh coriander leaves</li>
+              <li>Ginger slices</li>
+              <li>Sliced green chilies</li>
+              <li>Lemon wedges</li>
+            </ul>
+            <h2>Instructions:</h2>
+            <ol>
+              <li>Heat ghee or oil in a large pot over medium heat.</li>
+              <li>Add sliced onions and cook until golden brown.</li>
+              <li>
+                Add minced garlic and grated ginger, sauté for another 2
+                minutes.
+              </li>
+              <li>Add beef pieces to the pot and brown them on all sides.</li>
+              <li>
+                Sprinkle Nihari masala, turmeric powder, red chili powder, and
+                salt over the meat. Mix well.
+              </li>
+              <li>
+                If using wheat flour for thickening, mix it with a little water
+                to form a smooth paste. Add it to the pot and stir.
+              </li>
+              <li>
+                Pour in water, bring the mixture to a boil, then reduce heat to
+                low, cover, and simmer for several hours until the meat is
+                tender and the flavors meld.
+              </li>
+              <li>
+                You can cook it in a slow cooker for an extended period for even
+                more tenderness and flavor.
+              </li>
+              <li>
+                Garnish with fresh coriander leaves, ginger slices, and sliced
+                green chilies.
+              </li>
+              <li>
+                Serve hot with naan or steamed rice, and offer lemon wedges on
+                the side.
+              </li>
+            </ol>
+            <h2>Cook Time:</h2>
+            <p>3-4 hours (slow-cooked for the best results)</p>
+          </div>
+          <div class="recipe-column urdu">
+            <h2>بیف نہاری:</h2>
+            <ul>
+              <li>1 کلو گوشت شینک یا اسٹو میٹ، ٹکڑوں میں کاٹا ہوا</li>
+              <li>1/2 کپ گیہوں کا آٹا (گاڑھا کرنے کے لئے اختیاری)</li>
+              <li>1/4 کپ گھی یا ویجیٹیبل آئل</li>
+              <li>2 بڑے پیاز، پتلے ٹکڑوں میں کاٹی ہوئی</li>
+              <li>4 لہسن کی کچریں، کٹی ہوئی</li>
+              <li>2 انچ کا ٹکڑا ادرک، کٹا ہوا</li>
+              <li>
+                2 کھانے کے چمچ نہاری مصالحہ (دکھانے والے دوکانوں سے دستیاب)
+              </li>
+              <li>1 چائے کا چمچ ہلدی پاؤڈر</li>
+              <li>1 چائے کا چمچ لال مرچ پاؤڈر</li>
+              <li>ذائقہ کے لئے نمک</li>
+              <li>6 کپ پانی</li>
+              <li>تازہ دھنیا کی پتیاں چھڑکنے کے لئے</li>
+              <li>ادرک کے ٹکڑے چھڑکنے کے لئے</li>
+              <li>سلاسل ہری مرچیں چھڑکنے کے لئے</li>
+            </ul>
+            <h2>چھڑکنے کے لئے:</h2>
+            <ul>
+              <li>تازہ دھنیا کی پتیاں</li>
+              <li>ادرک کے ٹکڑے</li>
+              <li>سلاسل ہری مرچیں</li>
+              <li>لیموں کی چھچھ</li>
+            </ul>
+            <h2>ہدایات:</h2>
+            <ol>
+              <li>دھی یا تیل کو درمیانہ آنچ پر بھگاڑنے کے لئے گرم کریں۔</li>
+              <li>کٹی ہوئی پیاز ڈالیں اور سنہری براؤن ہونے تک پکائیں۔</li>
+              <li>
+                لہسن کی کچری اور کٹا ہوا ادرک ڈالیں اور مزید 2 منٹ کے لئے
+                چھڑکیں۔
+              </li>
+              <li>گوشت کے ٹکڑے ڈالیں اور انہیں تمام جانب سے براؤن کریں۔</li>
+              <li>
+                نہاری مصالحہ، ہلدی پاؤڈر، لال مرچ پاؤڈر، اور نمک گوشت پر چھڑکیں۔
+                اچھی طرح مکس کریں۔
+              </li>
+              <li>
+                گاڑھا کرنے کے لئے گیہوں کا آٹا استعمال ہو رہا ہے تو اسے تھوڑا
+                پانی کے ساتھ چھڑکیں۔ اور اچھی طرح مکس کریں۔
+              </li>
+              <li>
+                پانی ڈالیں، مکسچر کو اُبال آنے دیں، پھر آنچ کم کریں، ڈھک کر کچھ
+                گھنٹے تک ہلکی آنچ پر دم دیں جب تک گوشت ہموار اور مصالحے ٹھیک نہ
+                ہوں۔
+              </li>
+              <li>
+                آپ اسے زیادہ وقت تک ایک سلو ککر میں بھی پکا سکتے ہیں تاکہ گوشت
+                میں اور بھی نرمی اور ذائقہ آ جائے۔
+              </li>
+              <li>
+                تازہ دھنیا کی پتیاں، ادرک کے ٹکڑے، اور سلاسل ہری مرچیں چھڑکیں۔
+              </li>
+              <li>
+                نان یا اُبلے ہوئے چاول کے ساتھ گرما گرم پیش کریں اور ساتھ میں
+                لیموں کی چھچھ بھی فراہم کریں۔
+              </li>
+            </ol>
+            <h2>پکانے کا وقت:</h2>
+            <p>3-4 گھنٹے (بہترین نتائج کے لئے دھیرے سے پکایا جاتا ہے)</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

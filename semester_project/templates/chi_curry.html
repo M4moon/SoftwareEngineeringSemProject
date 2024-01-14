@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chicken Curry</title>
+    <link
+      href="{{ url_for('static', filename='styles.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="content-width">
+          <h1>Chicken Curry</h1>
+        </div>
+      </header>
+
+      {% include 'navbar.html' %}
+
+      <div class="content-width">
+        <div class="recipe-container">
+          <div class="recipe-column">
+            <h2>Ingredients:</h2>
+            <ul>
+              <li>500g chicken, cut into pieces</li>
+              <li>1 onion, finely chopped</li>
+              <li>2 tomatoes, pureed</li>
+              <li>1/2 cup yogurt</li>
+              <li>1 tablespoon ginger-garlic paste</li>
+              <li>2 teaspoons curry powder</li>
+              <li>1 teaspoon cumin powder</li>
+              <li>1 teaspoon coriander powder</li>
+              <li>1/2 teaspoon turmeric powder</li>
+              <li>1/2 teaspoon red chili powder</li>
+              <li>1/4 cup cooking oil</li>
+              <li>Fresh coriander for garnish</li>
+            </ul>
+            <h2>Instructions:</h2>
+            <ol>
+              <li>
+                In a pan, heat oil and sauté chopped onions until golden brown.
+              </li>
+              <li>
+                Add ginger-garlic paste, pureed tomatoes, and cook until oil
+                separates.
+              </li>
+              <li>
+                Add curry powder, cumin powder, coriander powder, turmeric, red
+                chili powder, and salt.
+              </li>
+              <li>Add chicken pieces and cook until browned.</li>
+              <li>
+                Stir in yogurt and simmer until the chicken is cooked through.
+              </li>
+              <li>Garnish with fresh coriander.</li>
+            </ol>
+            <h2>Cook Time:</h2>
+            <p>40 minutes</p>
+          </div>
+          <div class="recipe-column urdu">
+            <h2>چکن کڑی:</h2>
+            <ul>
+              <li>500 گرام چکن، ٹکڑوں میں کاٹا ہوا</li>
+              <li>1 پیاز، باریک چوپ کی ہوئی</li>
+              <li>2 ٹماٹر، گٹھیا ہوا</li>
+              <li>1/2 کپ دہی</li>
+              <li>1 کھانے کا چمچ ادرک لہسن پیسٹ</li>
+              <li>2 چائے کے چمچ کڑی پاؤڈر</li>
+              <li>1 چائے کا چمچ زیرہ پاؤڈر</li>
+              <li>1 چائے کا چمچ دھنیا پاؤڈر</li>
+              <li>1/2 چائے کا چمچ ہلدی پاؤڈر</li>
+              <li>1/2 چائے کا چمچ لال مرچ پاؤڈر</li>
+              <li>1/4 کپ ککنگ آئل</li>
+              <li>تازہ دھنیا چھڑکنے کے لئے</li>
+            </ul>
+            <h2>ہدایات:</h2>
+            <ol>
+              <li>
+                ایک پین میں تیل گرم کریں اور کاٹی ہوئی پیاز کو سنگھاڑے ہوئے ہلدی
+                پر سیکھ لیں۔
+              </li>
+              <li>
+                ادرک لہسن پیسٹ، گٹھیا ہوا ٹماٹر ڈالیں اور تاکہ تیل الگ ہو جائے۔
+              </li>
+              <li>
+                کڑی پاؤڈر، زیرہ پاؤڈر، دھنیا پاؤڈر، ہلدی، لال مرچ پاؤڈر، اور نمک
+                ڈالیں۔
+              </li>
+              <li>چکن ٹکڑوں ڈالیں اور تاکہ چکن براؤن ہو جائے۔</li>
+              <li>دہی ڈالیں اور چکن پک جانے تک دم دیں۔</li>
+              <li>تازہ دھنیا سے چھڑکیں۔</li>
+            </ol>
+            <h2>پکانے کا وقت:</h2>
+            <p>40 منٹ</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

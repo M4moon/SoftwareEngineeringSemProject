@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mediterranean Lamb Gyro Bowl</title>
+    <link
+      href="{{ url_for('static', filename='styles.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="content-width">
+          <h1>Mediterranean Lamb Gyro Bowl</h1>
+        </div>
+      </header>
+
+      {% include 'navbar.html' %}
+
+      <div class="content-width">
+        <div class="recipe-container">
+          <div class="recipe-column">
+            <h2>Ingredients:</h2>
+            <ul>
+              <li>1 pound ground lamb</li>
+              <li>1 tablespoon olive oil</li>
+              <li>1 teaspoon ground cumin</li>
+              <li>1 teaspoon ground coriander</li>
+              <li>1 teaspoon paprika</li>
+              <li>1/2 teaspoon garlic powder</li>
+              <li>Cooked quinoa or rice</li>
+              <li>Tzatziki sauce</li>
+              <li>Sliced cucumbers, tomatoes, and red onions</li>
+            </ul>
+            <h2>Instructions:</h2>
+            <ol>
+              <li>
+                In a pan, cook ground lamb with olive oil, cumin, coriander,
+                paprika, and garlic powder.
+              </li>
+              <li>Serve over a bed of cooked quinoa or rice.</li>
+              <li>
+                Top with sliced cucumbers, tomatoes, red onions, and tzatziki
+                sauce.
+              </li>
+            </ol>
+            <h2>Cook Time:</h2>
+            <p>20 minutes</p>
+          </div>
+          <div class="recipe-column urdu">
+            <h2>میڈیٹرینیائن لیمب جائرو بول:</h2>
+            <ul>
+              <li>1 پاؤنڈ گراؤنڈ لیمب</li>
+              <li>1 چمچ زیتون کا تیل</li>
+              <li>1 چائے کا چمچ سفید زیرہ</li>
+              <li>1 چائے کا چمچ دھنیا پاؤڈر</li>
+              <li>1 چائے کا چمچ پاپریکا</li>
+              <li>1/2 چائے کا چمچ لہسن پاؤڈر</li>
+              <li>پکی ہوئی کوئنوا یا چاول</li>
+              <li>تزاتزیکی سوس</li>
+              <li>کٹی ہوئی کھیرے، ٹماٹر، اور لال پیاز</li>
+            </ul>
+            <h2>ہدایات:</h2>
+            <ol>
+              <li>
+                ایک پین میں گراؤنڈ لیمب کو زیتون کے تیل، سفید زیرہ، دھنیا پاؤڈر،
+                پاپریکا، اور لہسن پاؤڈر کے ساتھ پکائیں۔
+              </li>
+              <li>پکی ہوئی کوئنوا یا چاول کے ساتھ سرو کریں۔</li>
+              <li>
+                کٹی ہوئی کھیرے، ٹماٹر، لال پیاز، اور تزاتزیکی سوس سے چھڑکیں۔
+              </li>
+            </ol>
+            <h2>پکانے کا وقت:</h2>
+            <p>20 منٹ</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

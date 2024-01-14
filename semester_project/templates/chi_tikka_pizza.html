@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chicken Tikka Pizza</title>
+    <link
+      href="{{ url_for('static', filename='styles.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="content-width">
+          <h1>Chicken Tikka Pizza</h1>
+        </div>
+      </header>
+
+      {% include 'navbar.html' %}
+
+      <div class="content-width">
+        <div class="recipe-container">
+          <div class="recipe-column">
+            <h2>Ingredients:</h2>
+            <ul>
+              <li>Pizza dough</li>
+              <li>1 cup cooked and shredded chicken tikka</li>
+              <li>1/2 cup diced bell peppers</li>
+              <li>1/2 cup diced onions</li>
+              <li>1 cup mozzarella cheese</li>
+              <li>1/4 cup tomato sauce</li>
+              <li>1 teaspoon garam masala</li>
+              <li>Fresh cilantro for garnish</li>
+            </ul>
+            <h2>Instructions:</h2>
+            <ol>
+              <li>Roll out pizza dough.</li>
+              <li>Spread tomato sauce on the dough.</li>
+              <li>Sprinkle chicken tikka, bell peppers, onions, and cheese.</li>
+              <li>Bake until the crust is golden.</li>
+              <li>Sprinkle garam masala and garnish with fresh cilantro.</li>
+            </ol>
+            <h2>Cook Time:</h2>
+            <p>20 minutes</p>
+          </div>
+          <div class="recipe-column urdu">
+            <h2>چکن ٹکا پیزا:</h2>
+            <ul>
+              <li>پیزا ڈو</li>
+              <li>1 کپ ککڑا ہوا اور چکن ٹکا</li>
+              <li>1/2 کپ چھوٹے ٹکڑوں میں کٹا ہوا شملہ مرچ</li>
+              <li>1/2 کپ چھوٹے ٹکڑوں میں کٹا ہوا پیاز</li>
+              <li>1 کپ موزریلا چیز</li>
+              <li>1/4 کپ ٹماٹو سوس</li>
+              <li>1 چائے کا چمچ گرم مصالحہ</li>
+              <li>تازہ دھنیا چھڑکنے کے لئے</li>
+            </ul>
+            <h2>ہدایات:</h2>
+            <ol>
+              <li>پیزا ڈو کو بیل لیں۔</li>
+              <li>ٹماٹو سوس ڈو پر پھیلائیں۔</li>
+              <li>چکن ٹکا، شملہ مرچ، پیاز اور چیز چھڑکیں۔</li>
+              <li>کرسٹ سنگھاڑے ہونے تک بیک کریں۔</li>
+              <li>گرم مصالحہ چھڑکیں اور تازہ دھنیا سے سجا کر پیش کریں۔</li>
+            </ol>
+            <h2>پکانے کا وقت:</h2>
+            <p>20 منٹ</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

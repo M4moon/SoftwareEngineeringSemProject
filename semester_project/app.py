@@ -76,6 +76,27 @@ def Turkey_Skewers():
 @app.route('/Chi_biryani')  # Adjust the route based on the recipe number
 def Chicken_Biryani():
     return render_template('chick_biryani.html')
+@app.route('/Chi_Curry')  # Adjust the route based on the recipe number
+def Chicken_Curry():
+    return render_template('chi_curry.html')
+@app.route('/Chi_Tikka_Pizza')  # Adjust the route based on the recipe number
+def Chicken_Tikka_Pizza():
+    return render_template('chi_tikka_pizza.html')
+@app.route('/Butter_Chi_Tacos')  # Adjust the route based on the recipe number
+def Butter_Chi_Tacos():
+    return render_template('butter_chi_tacos.html')
+@app.route('/Cajun_Pasta')  # Adjust the route based on the recipe number
+def Cajun_Pasta():
+    return render_template('cajun_pasta.html')
+@app.route('/Lamb_Gyro')  # Adjust the route based on the recipe number
+def Lamb_Gyro():
+    return render_template('lamb_gyro.html')
+@app.route('/Jollof')  # Adjust the route based on the recipe number
+def Jollof():
+    return render_template('jollof.html')
+@app.route('/Nihari')  # Adjust the route based on the recipe number
+def Beef_Nihari():
+    return render_template('beef_nihari.html')
 
 
 

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Butter Chicken Tacos</title>
+    <link
+      href="{{ url_for('static', filename='styles.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="content-width">
+          <h1>Butter Chicken Tacos</h1>
+        </div>
+      </header>
+
+      {% include 'navbar.html' %}
+
+      <div class="content-width">
+        <div class="recipe-container">
+          <div class="recipe-column">
+            <h2>Ingredients:</h2>
+            <ul>
+              <li>1 cup butter chicken, shredded</li>
+              <li>8 small tortillas</li>
+              <li>1 cup shredded lettuce</li>
+              <li>1/2 cup diced tomatoes</li>
+              <li>1/4 cup chopped cilantro</li>
+              <li>Sour cream for topping</li>
+            </ul>
+            <h2>Instructions:</h2>
+            <ol>
+              <li>Warm tortillas in a pan.</li>
+              <li>Fill with shredded butter chicken.</li>
+              <li>Top with lettuce, tomatoes, cilantro, and sour cream.</li>
+            </ol>
+            <h2>Cook Time:</h2>
+            <p>15 minutes</p>
+          </div>
+          <div class="recipe-column urdu">
+            <h2>بٹر چکن ٹاکوس:</h2>
+            <ul>
+              <li>1 کپ بٹر چکن، ٹکڑوں میں کاٹا ہوا</li>
+              <li>8 چھوٹے ٹارٹیلاز</li>
+              <li>1 کپ ٹکڑوں میں کاٹی ہوئی لیٹس</li>
+              <li>1/2 کپ چھوٹے ٹکڑوں میں کاٹا ہوا ٹماٹر</li>
+              <li>1/4 کپ کٹی ہوئی دھنیا</li>
+              <li>ٹاپنگ کے لئے ساور کریم</li>
+            </ul>
+            <h2>ہدایات:</h2>
+            <ol>
+              <li>ایک پین میں ٹارٹیلاز گرم کریں۔</li>
+              <li>بٹر چکن ٹکڈے بھریں۔</li>
+              <li>لیٹس، ٹماٹر، دھنیا، اور ساور کریم کے ساتھ چھڑکیں۔</li>
+            </ol>
+            <h2>پکانے کا وقت:</h2>
+            <p>15 منٹ</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

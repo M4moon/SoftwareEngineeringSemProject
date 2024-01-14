@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cajun Shrimp Pasta Alfredo</title>
+    <link
+      href="{{ url_for('static', filename='styles.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="content-width">
+          <h1>Cajun Shrimp Pasta Alfredo</h1>
+        </div>
+      </header>
+
+      {% include 'navbar.html' %}
+
+      <div class="content-width">
+        <div class="recipe-container">
+          <div class="recipe-column">
+            <h2>Ingredients:</h2>
+            <ul>
+              <li>1 pound shrimp, peeled and deveined</li>
+              <li>8 oz fettuccine pasta</li>
+              <li>1 cup heavy cream</li>
+              <li>1/2 cup grated Parmesan cheese</li>
+              <li>2 tablespoons Cajun seasoning</li>
+              <li>2 tablespoons butter</li>
+              <li>Chopped parsley for garnish</li>
+            </ul>
+            <h2>Instructions:</h2>
+            <ol>
+              <li>Cook pasta according to package instructions.</li>
+              <li>In a pan, cook shrimp with Cajun seasoning and butter.</li>
+              <li>
+                Add heavy cream and Parmesan, stir until the sauce thickens.
+              </li>
+              <li>Toss in cooked pasta and garnish with chopped parsley.</li>
+            </ol>
+            <h2>Cook Time:</h2>
+            <p>25 minutes</p>
+          </div>
+          <div class="recipe-column urdu">
+            <h2>کیجن شرمپ پاستا الفریڈو:</h2>
+            <ul>
+              <li>1 پاؤنڈ شرمپ، چھلکا ہوا اور دانتوں سے پاک</li>
+              <li>8 اونس فیٹوچینی پاستا</li>
+              <li>1 کپ ہیوی کریم</li>
+              <li>1/2 کپ گریٹڈ پارمیزان چیز</li>
+              <li>2 کھانے کے چمچ کیجن سیزننگ</li>
+              <li>2 کھانے کے چمچ مکھن</li>
+              <li>چھوٹی کٹی ہوئی پارسلی چھڑکنے کے لئے</li>
+            </ul>
+            <h2>ہدایات:</h2>
+            <ol>
+              <li>پاستا کو پیکج کی ہدایات کے مطابق پکائیں۔</li>
+              <li>ایک پین میں کیجن سیزننگ اور مکھن کے ساتھ شرمپ پکائیں۔</li>
+              <li>
+                ہیوی کریم اور پارمیزان چیز ڈالیں، جب تک سوس گاڑھا نہ ہو جائے
+                چھلائیں۔
+              </li>
+              <li>پکی ہوئی پاستا ڈالیں اور چھوٹی کٹی ہوئی پارسلی سے چھڑکیں۔</li>
+            </ol>
+            <h2>پکانے کا وقت:</h2>
+            <p>25 منٹ</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
