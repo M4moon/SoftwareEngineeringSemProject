@@ -4,11 +4,24 @@ from flask import Flask, render_template, request, redirect, url_for
 app = Flask(__name__)
 
 recipes = [
-    {'title': 'Sweet Strawberry Cheesecake', 'content': '...'},
-    {'title': 'Chocolate Brownie', 'content': '...'},
-    # Add more recipes as needed
+    'Avocado_toast.html',
+    'beef_nihari.html',
+    'burrito.html',
+    'butter_chi_tacos.html',
+    'cajun_pasta.html',
+    'caprese_sandwich.html',
+    'chi_curry.html',
+    'chi_tikka_pizza.html',
+    'chick_biryani.html',
+    'chicken_salad.html',
+    'classic_pancakes.html',
+    'egg_cheese_sando.html',
+    'greek_yogurt.html',
+    'jollof.html',
+    'lamb_gyro.html',
+    'strawberry_cheesecake.html',
+    'turkey_skewers.html'
 ]
-
 # Route for the homepage
 @app.route('/home')
 def index_page():
@@ -20,14 +33,14 @@ def recipe_page():
     # Correct template name: 'recipe.html'
     return render_template('recipe.html')
 
-# Route for the search functionality
-@app.route('/search')
+@app.route('/search', methods=['GET', 'POST'])
 def search():
-    query = request.args.get('query')
-    # Simple search logic: Check if the query is in the title of any recipe
-    results = [recipe for recipe in recipes if query.lower() in recipe['title'].lower()]
-    return render_template('search_results.html', query=query, results=results)
+    if request.method == 'POST':
+        search_term = request.form['query']
+        matching_recipes = [recipe for recipe in recipes if search_term.lower() in recipe.lower()]
+        return render_template('search_results.html', search_term=search_term, matching_recipes=matching_recipes)
 
+    return render_template('search_results.html', search_term=None, matching_recipes=None)
 # Route for sign-in
 @app.route('/signin', methods=['GET', 'POST'])
 def signin():

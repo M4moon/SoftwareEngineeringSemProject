@@ -1,33 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search Results</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Search Results - Recipe Website</title>
     <link
-      rel="stylesheet"
       href="{{ url_for('static', filename='styles.css') }}"
+      rel="stylesheet"
     />
   </head>
   <body>
-    <h1>Search Results</h1>
-    {% if videos %}
-    <ul>
-      {% for video in videos %}
-      <li>
-        <h2>{{ video.title }}</h2>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/{{ video.id }}"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
-      </li>
-      {% endfor %}
-    </ul>
-    {% else %}
-    <p>No videos found.</p>
-    {% endif %}
+    <header>
+      <div class="content-width">
+        <h1>Search Results</h1>
+        <p>
+          <em>Are You Looking for these recipes?</em>
+        </p>
+      </div>
+    </header>
+    {% include 'navbar.html' %}
+
+    <div class="content-width">
+      {% if search_term %}
+      <p>Results for '{{ search_term }}':</p>
+      <ul>
+        {% if matching_recipes %} {% for recipe in matching_recipes %}
+        <li>
+          <a href="{{ url_for('static', filename=recipe) }}">{{ recipe }}</a>
+        </li>
+        {% endfor %} {% else %}
+        <li>No matching recipes found.</li>
+        {% endif %}
+      </ul>
+      {% endif %}
+    </div>
+    {% include 'footer.html' %}
   </body>
 </html>

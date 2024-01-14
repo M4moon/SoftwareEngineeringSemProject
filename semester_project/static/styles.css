@@ -28,6 +28,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
+  font-size: 20px;
 }
 
 main {
@@ -118,9 +119,13 @@ header p {
   background-color: hsl(300, 50%, 50%)
 }
 .recipe-container {
+  background-color: #ffeb3b;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  border-bottom: 4px, black;
+  padding: 30px;
+  text-decoration: underline,black;
 }
 
 .recipe-column {
@@ -148,4 +153,14 @@ header p {
 .recipe-column.urdu:h2{
 font-family:Tahoma, sans-serif ;
 }
+.site-footer{
+background-color: hsl(280, 50%, 40%);
+margin-bottom: 0%;
+margin-top: 20px;
+padding: 10px;
+color: aliceblue;
+ scroll-behavior:smooth;
+flex-shrink: 0;}
+
+
 /* Add more styling as needed */
