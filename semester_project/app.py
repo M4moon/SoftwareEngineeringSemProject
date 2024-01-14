@@ -3,24 +3,26 @@ from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
+users = ['mamoon','haadin','saad']
+passes = ['mamoon','haadin','saad']
 recipes = [
-    'Avocado_toast.html',
-    'beef_nihari.html',
-    'burrito.html',
-    'butter_chi_tacos.html',
-    'cajun_pasta.html',
-    'caprese_sandwich.html',
-    'chi_curry.html',
-    'chi_tikka_pizza.html',
-    'chick_biryani.html',
-    'chicken_salad.html',
-    'classic_pancakes.html',
-    'egg_cheese_sando.html',
-    'greek_yogurt.html',
-    'jollof.html',
-    'lamb_gyro.html',
-    'strawberry_cheesecake.html',
-    'turkey_skewers.html'
+    {'id': 1, 'name': 'Avocado Toast', 'route': 'avo_toast'},
+    {'id': 2, 'name': 'Beef Nihari', 'route': 'Beef_Nihari'},
+    {'id': 3, 'name': 'Burrito', 'route': 'break_burrito'},
+    {'id': 4, 'name': 'Butter Chicken Tacos', 'route': 'Butter_Chi_Tacos'},
+    {'id': 5, 'name': 'Cajun Pasta', 'route': 'Cajun_Pasta'},
+    {'id': 6, 'name': 'Caprese Sandwich', 'route': 'Caprese_Sando'},
+    {'id': 7, 'name': 'Chicken Curry', 'route': 'Chicken_Curry'},
+    {'id': 8, 'name': 'Chicken Tikka Pizza', 'route': 'Chicken_Tikka_Pizza'},
+    {'id': 9, 'name': 'Chicken Biryani', 'route': 'Chicken_Biryani'},
+    {'id': 10, 'name': 'Chicken Salad', 'route': 'Chicken_Salad'},
+    {'id': 11, 'name': 'Classic Pancakes', 'route': 'classic_pancakes'},
+    {'id': 12, 'name': 'Egg and Cheese Sandwich', 'route': 'egg_cheese_sando'},
+    {'id': 13, 'name': 'Greek Yogurt', 'route': 'greek_yoghurt'},
+    {'id': 14, 'name': 'Jollof Rice', 'route': 'Jollof'},
+    {'id': 15, 'name': 'Lamb Gyro', 'route': 'Lamb_Gyro'},
+    {'id': 16, 'name': 'Strawberry Cheesecake', 'route': 'straw_cheesecake'},
+    {'id': 17, 'name': 'Turkey Skewers', 'route': 'Turkey_Skewers'}
 ]
 # Route for the homepage
 @app.route('/home')
@@ -36,12 +38,12 @@ def recipe_page():
 @app.route('/search', methods=['GET', 'POST'])
 def search():
     if request.method == 'POST':
-        search_term = request.form['query']
-        matching_recipes = [recipe for recipe in recipes if search_term.lower() in recipe.lower()]
+        search_term = request.form['query'].lower()
+        matching_recipes = [recipe for recipe in recipes if search_term in recipe['name'].lower()]
         return render_template('search_results.html', search_term=search_term, matching_recipes=matching_recipes)
 
     return render_template('search_results.html', search_term=None, matching_recipes=None)
-# Route for sign-in
+
 @app.route('/signin', methods=['GET', 'POST'])
 def signin():
     if request.method == 'POST':
@@ -49,8 +51,8 @@ def signin():
         username = request.form.get('username')
         password = request.form.get('password')
 
-        # Implement your sign-in logic here (e.g., check credentials)
-        # For demonstration purposes, we'll just redirect to the homepage
+        if username in users & password in passes:
+            return redirect(url_for('recipe'))
         return redirect(url_for('index'))
 
     return render_template('signin.html')
